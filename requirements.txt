@@ -2,7 +2,6 @@ acres==0.3.0
 aniso8601==9.0.1
 annotated-types==0.7.0
 anyio==4.8.0
-apturl==0.5.2
 asttokens==3.0.0
 bcrypt==3.2.0
 beautifulsoup4==4.13.3
@@ -10,6 +9,7 @@ blinker==1.8.2
 Brlapi==0.8.3
 cachetools==5.0.0
 certifi==2020.6.20
+cffi==1.17.1
 chardet==4.0.0
 charset-normalizer==3.4.1
 ci-info==0.3.0
@@ -128,6 +128,7 @@ puremagic==1.28
 pyasn1==0.4.8
 pyasn1-modules==0.2.1
 pycairo==1.20.1
+pycparser==2.22
 pycups==2.0.1
 pydantic==2.10.6
 pydantic_core==2.27.2
