@@ -25,7 +25,7 @@ def query_llm(question):
     return response["choices"][0]["message"]["content"]
 
 app = Flask(__name__)
-OPENAI_API_KEY = "your-proxy-token"
+OPENAI_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIyZjMwMDA5MzVAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.H2oBmtxD0zN1Xs0akQO1zyfNQORQkFFiacjMetpx5G0"
 
 def handle_question(question, file):
     """Identify the question type and return the correct answer. If unknown, use LLM."""
@@ -198,5 +198,7 @@ def api():
     answer = handle_question(question, file)
     return jsonify({"answer": answer})
 
+    
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
